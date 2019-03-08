@@ -3,9 +3,9 @@ class StudentCommunicationsController < ApplicationController
 	def create
 		@student_comm = StudentCommunication.new(student_communication_params)
 		if @student_comm.save
-			redirect_to root_path
+			redirect_to student_comm_thanks_path
 		else
-			redirect_to root_path
+			redirect_to student_comm_thanks_path
 		end
 	end
 

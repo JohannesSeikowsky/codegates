@@ -78,7 +78,7 @@
       <h3 id="course_title"> The Minimum to be Dangerous </h3>
 
       <div id="side_bar">
-        <%= link_to "1. Intro", less_one_path, class: "side_bar_links" %>
+        <%= link_to "1. Intro", root_path, class: "side_bar_links" %>
         <%= link_to "2. Setup", less_two_path, class: "side_bar_links" %>
         <%= link_to "3. Repl", less_three_path, class: "side_bar_links" %>
         <%= link_to "4. Buil-In Functions", less_four_path, class: "side_bar_links" %>
@@ -112,19 +112,11 @@
                   style: "width: 375px; height: 26px; margin-bottom: 12px;" %> <br>
               <%= f.text_field :tutor, placeholder: "Your Tutor",
                   style: "width: 375px; height: 26px; margin-bottom: 12px;" %> <br>
-              <%= f.submit "submit", style: "cursor: pointer; left: right; font-size: 13px;" %>
+              <span> Current Tutors: Johannes, Alfred, Marcello, Oleg </span> <br>
+              <%= f.submit "submit", style: "cursor: pointer; font-size: 13px; margin-top: 10px;" %>
           <% end %>
 
 
-         <div id="lesson_footer">
-            <% if @previous_link %>
-              <%= link_to "Prev", @previous_link, id: "previous_link" %>
-            <% end %>
-
-            <% if @next_link %>
-              <%= link_to "Next", @next_link, id: "next_link" %>
-            <% end %>
-        </div>
       </div>
     </div>
 

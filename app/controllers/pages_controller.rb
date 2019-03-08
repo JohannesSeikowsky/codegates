@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  layout "plain", only: [:student_comm_thanks]
+
   def less_one
   end
 
@@ -22,4 +24,9 @@ class PagesController < ApplicationController
 
   def less_eight
   end
+
+
+  def student_comm_thanks
+  end
+
 end

@@ -13,4 +13,6 @@ Rails.application.routes.draw do
 
   post 'communication', to: 'student_communications#create', as: 'student_communication'
 
+  get 'thanks', to: 'pages#student_comm_thanks', as: 'student_comm_thanks'
+
 end

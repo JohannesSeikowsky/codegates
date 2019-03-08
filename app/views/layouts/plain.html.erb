@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Codegates - Coding Course </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="shortcut icon" type="image/png" href="https://codegates.com/assets/images/favicon.png?v37705171731551"/>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <style type="text/css">
+    html{
+      /* font-family: "DejaVu Sans"; */
+      background-color: #F5F7EE;
+      margin-top: 36px;
+      margin-bottom: 125px;
+      font-size: 15px;
+    }
+
+    #container{
+      width: 1040px;
+      margin-left: 100px;
+    }
+
+    #course_title{
+      text-decoration: underline; 
+      margin-bottom: 32px;
+    }
+
+    #side_bar{
+      width: 270px;
+      float: left;
+    }
+
+    .side_bar_links{
+      display: block;
+      margin-top: 3px;
+      text-decoration: none;
+    }
+
+    #lesson_content{
+      width: 760px;
+      float: left;     
+    }
+
+    #lesson_title{
+      margin-top: 0px;
+    }
+
+    #lesson_footer{
+      /* container of prev and next link */
+      margin-top: 28px;
+    }
+
+    #previous_link{
+      font-size: 16px;
+    }
+
+    #next_link{
+      float: right; 
+      font-size: 16px;
+    }
+  </style>
+
+  <body>
+    
+    
+    <div id="container">
+	    <span style="background-color: orange; font-size: 16px;"> Co-coding evenings are every Monday and every Friday, 19.00-21.30 UK-time </span>
+
+		<%= yield %>
+    </div>
+
+  </body>
+</html>
