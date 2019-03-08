@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   get 'lesson_seven', to: 'pages#less_seven', as: 'less_seven'
   get 'lesson_eight', to: 'pages#less_eight', as: 'less_eight'
 
-  post 'communication', to: 'student_communications#create', as: 'student_communications'
+  post 'communication', to: 'student_communications#create', as: 'student_communication'
 
 end
