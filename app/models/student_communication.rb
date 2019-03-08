@@ -1,0 +1,2 @@
+class StudentCommunication < ApplicationRecord
+end

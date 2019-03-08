@@ -78,16 +78,16 @@
       <h3 id="course_title"> The Minimum to be Dangerous </h3>
 
       <div id="side_bar">
-        <%= link_to "1. Intro", lesson_intro_path, class: "side_bar_links" %>
-        <%= link_to "2. Setup", lesson_one_path, class: "side_bar_links" %>
-        <%= link_to "3. Repl", lesson_two_path, class: "side_bar_links" %>
-        <%= link_to "4. Buil-In Functions", lesson_three_path, class: "side_bar_links" %>
-        <%= link_to "5. Strings & String Methods", lesson_four_path, class: "side_bar_links" %>
-        <%= link_to "6. Variables", lesson_five_path, class: "side_bar_links" %>
-        <%= link_to "7. Lists & List Functions", lesson_six_path, class: "side_bar_links" %>
-        <%= link_to "8. If-Statements", lesson_seven_path, class: "side_bar_links" %>
-        <%= link_to "9. For-Loops", lesson_eight_path, class: "side_bar_links" %>
-        <%= link_to "10. Modules", lesson_eight_path, class: "side_bar_links" %>
+        <%= link_to "1. Intro", less_one_path, class: "side_bar_links" %>
+        <%= link_to "2. Setup", less_two_path, class: "side_bar_links" %>
+        <%= link_to "3. Repl", less_three_path, class: "side_bar_links" %>
+        <%= link_to "4. Buil-In Functions", less_four_path, class: "side_bar_links" %>
+        <%= link_to "5. Strings & String Methods", less_five_path, class: "side_bar_links" %>
+        <%= link_to "6. Variables", less_six_path, class: "side_bar_links" %>
+        <%= link_to "7. Lists & List Functions", less_seven_path, class: "side_bar_links" %>
+        <%= link_to "8. If-Statements", less_eight_path, class: "side_bar_links" %>
+        <%= link_to "9. For-Loops", less_eight_path, class: "side_bar_links" %>
+        <%= link_to "10. Modules", less_eight_path, class: "side_bar_links" %>
 
         <!--
         <br>
@@ -105,12 +105,12 @@
          <%= yield %>
 
           <h3 style="text-decoration: underline;"> Direct Line to Tutor </h3>
-          <%= form_for :student_question, url: student_question_url do |f| %>
-              <%= f.text_field :question, placeholder: "Your Question",
+          <%= form_for :student_communication, url: student_communication_url do |f| %>
+              <%= f.text_field :content, placeholder: "Your Question",
                   style: "width: 375px; height: 100px; margin-bottom: 6px;" %> <br>
               <%= f.text_field :student, placeholder: "Your Name",
                   style: "width: 375px; height: 26px; margin-bottom: 12px;" %> <br>
-              <%= f.text_field :student, placeholder: "Your Tutor",
+              <%= f.text_field :tutor, placeholder: "Your Tutor",
                   style: "width: 375px; height: 26px; margin-bottom: 12px;" %> <br>
               <%= f.submit "submit", style: "cursor: pointer; left: right; font-size: 13px;" %>
           <% end %>
