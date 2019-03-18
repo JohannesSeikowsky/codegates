@@ -14,7 +14,8 @@
   <style type="text/css">
     html{
       /* font-family: "DejaVu Sans"; */
-      background-color: #F5F7EE;
+      background-color: #F7EEE5;
+      /* background-color: #F5F7EE; */
       margin-top: 36px;
       margin-bottom: 125px;
       font-size: 15px;
@@ -69,7 +70,7 @@
     
     
     <div id="container">
-    <span style="background-color: orange; font-size: 16px;"> Next Co-coding evening is coming Friday, 8th March, 19.00-21.30 UK-time </span>
+    <span style="background-color: orange; font-size: 18px; font-weight: bold;"> Next Co-coding evening is next Friday, 22nd of March, 19.00-21.30 UK-time </span>
 
       <!--
       <h3 id="course_title"> Programming with Python </h3>
@@ -104,17 +105,20 @@
       <div id="lesson_content">
          <%= yield %>
 
-          <h3 style="text-decoration: underline;"> Ask your Tutor </h3>
-          <%= form_for :student_communication, url: student_communication_url do |f| %>
-              <%= f.text_field :content, placeholder: "Your Question",
-                  style: "width: 375px; height: 100px; margin-bottom: 6px;" %> <br>
-              <%= f.text_field :student, placeholder: "Your Name",
-                  style: "width: 375px; height: 26px; margin-bottom: 12px;" %> <br>
-              <%= f.text_field :tutor, placeholder: "Your Tutor",
-                  style: "width: 375px; height: 26px; margin-bottom: 12px;" %> <br>
-              <span> Current Tutors: Johannes, Alfred, Marcello, Oleg </span> <br>
-              <%= f.submit "submit", style: "cursor: pointer; font-size: 13px; margin-top: 10px;" %>
-          <% end %>
+          <!-- <h3 style="text-decoration: underline;"> Ask your Tutor </h3> -->
+
+          <div style="margin-top: 22px;">
+            <%= form_for :student_communication, url: student_communication_url do |f| %>
+                <%= f.text_field :content, placeholder: "Your Question",
+                    style: "width: 468px; height: 100px; margin-bottom: 6px;" %> <br>
+                <%= f.text_field :student, placeholder: "Your Name",
+                    style: "width: 255px; height: 26px; margin-bottom: 12px;" %> <br>
+                <%= f.text_field :tutor, placeholder: "Your Tutor",
+                    style: "width: 255px; height: 26px; margin-bottom: 12px;" %> <br>
+                <%= f.submit "submit question", style: "cursor: pointer; font-size: 13px; margin-top: 0px;" %> <br> <br>
+                <span style="text-decoration: underline;"> Current Tutors: Johannes, Alfred, Marcello, Oleg </span> <br>
+            <% end %>
+          </div>
 
 
       </div>
