@@ -1,28 +1,28 @@
 class PagesController < ApplicationController
   layout "plain", only: [:student_comm_thanks]
 
-  def less_one
+  def page_one
   end
 
-  def less_two
+  def page_two
   end
 
-  def less_three
+  def page_three
   end
 
-  def less_four
+  def page_four
   end
 
-  def less_five
+  def page_five
   end
 
-  def less_six
+  def page_six
   end
 
-  def less_seven
+  def page_seven
   end
 
-  def less_eight
+  def page_eight
   end
 
 
