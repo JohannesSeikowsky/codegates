@@ -130,29 +130,10 @@
 
       </div>
 
-
       <div id="lesson_content">
-         <%= yield %>
-
-          <div style="margin-top: 18px id="ask_tutor">
-            <span style="background-color: orange; font-weight: bold; font-size: 16px;"> 
-              Ask your Tutor
-            </span>
-          </div>
-
-          <div style="margin-top: 8px;">
-            <%= form_for :student_communication, url: student_communication_url do |f| %>
-                <%= f.text_field :content, placeholder: "Your Question",
-                    style: "width: 468px; height: 100px; margin-bottom: 6px;" %> <br>
-                <%= f.text_field :student, placeholder: "Your Name",
-                    style: "width: 255px; height: 26px; margin-bottom: 12px;" %> <br>
-                <%= f.text_field :tutor, placeholder: "Your Tutor",
-                    style: "width: 255px; height: 26px; margin-bottom: 12px;" %> <br>
-                <%= f.submit "submit question", style: "cursor: pointer; font-size: 13px; margin-top: 0px;" %> <br> <br>
-                <span style="text-decoration: underline;"> Current Tutors: Johannes, Alfred, Marcello, Oleg </span> <br>
-            <% end %>
-          </div>
+        <%= yield %>
       </div>
+
     </div>
 
   </body>

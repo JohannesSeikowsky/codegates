@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   layout "plain", only: [:student_comm_thanks]
+  layout "practice", only: [:page_three]
 
   def page_one
   end
