@@ -13,21 +13,27 @@
 
   <style type="text/css">
     html{
-      /* font-family: "DejaVu Sans"; */
-      background-color: #F5F7EE;
-      margin-top: 36px;
+      font-family: "Verdana"; 
+      background-color: #F6F6EF;
+      /* background-color: #F7EEE5; */
+      /* background-color: #F5F7EE; */
+      margin-top: 12px;
       margin-bottom: 125px;
       font-size: 15px;
     }
 
+    a{
+      color: black;
+    }
+
     #container{
       width: 1040px;
-      margin-left: 100px;
+      margin: auto;
     }
 
     #course_title{
-      text-decoration: underline; 
       margin-bottom: 32px;
+      font-size: 18px;
     }
 
     #side_bar{
@@ -39,6 +45,11 @@
       display: block;
       margin-top: 3px;
       text-decoration: none;
+    }
+
+    .practice_link{
+      color: #565656;
+      margin-bottom: 10px;
     }
 
     #lesson_content{
@@ -63,14 +74,81 @@
       float: right; 
       font-size: 16px;
     }
+
+    #ask_tutor_link{
+      margin-right: 12px;
+      padding: 3px 7px 3px 7px;
+      /* background-color: #B0E46E; */
+      text-decoration: underline;
+    }
+
+    .vid_title{
+      font-weight: bold; 
+      font-size: 18px;
+    }
+
+    .vid_description{
+      margin-top: 6px;
+      width: 468px;
+      line-height: 1.32;
+    }
+
+    .to_practice_btn{
+      background-color: #DEDED4; 
+      padding: 4px 12px;
+      text-decoration: none;
+      font-size: 15px;
+      border: 2px solid lightgrey;
+    }
   </style>
 
   <body>
     
+    
     <div id="container">
-      <div style="margin: 0px 0px 22px 0px;"> <span style="background-color: #DEDED4; font-size: 18px; font-weight: bold;"> Classes are on each evening, 18.00-19.00 and 19.00-20.00. </span> </div>
+        
+      <div style="margin-bottom: 22px;">
+        <%= link_to root_path, style: "text-decoration: none;" do %>
+          <h1 style="margin: 0px 0px 4px 0px; font-size: 28px;"> Codegates Python </h1>
+          <h2 style="margin: 0px 0px 10px 0px; font-size: 18px;"> The Minimum to be dangerous </h2>
+        <% end %>
+      </div>
 
-		  <%= yield %>
+      
+      <div id="side_bar">
+        <%= link_to "1. Repl.it", page_two_path, class: "side_bar_links" %>
+        <%= link_to "Practice", page_three_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+
+        <%= link_to "2. Built-in Functions", page_four_path, class: "side_bar_links" %>
+        <%= link_to "Practice", page_five_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+
+        <%= link_to "3. Programming Languages", page_six_path, class: "side_bar_links" %>
+        <%= link_to "4. Strings & String-Functions", page_seven_path, class: "side_bar_links" %>
+        <%= link_to "Practice", page_eight_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+
+        <%= link_to "5. Comments", page_nine_path, class: "side_bar_links" %>
+        <%= link_to "Practice", page_ten_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+
+        <%= link_to "6. Variables", page_eleven_path, class: "side_bar_links" %>
+        <%= link_to "Practice", page_twelve_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+
+        <%= link_to "7. Case Study 1", page_thirteen_path, class: "side_bar_links" %>
+
+
+        <br> <br>
+        <p style="font-weight: bold; font-size: 18px; margin-bottom: 6px;"> Announcements </p>
+
+        <span style="font-size: 15px;"> More Tutorials will <br> continually be released in <br> tandem with our classes. </span>
+        <br> <br>
+
+        <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px;"> Classes are on each evening <br> of the week 18.00-19.00 and <br> 19.00-20.00 UK-time. </span> </div>
+
+      </div>
+
+
+      <div id="lesson_content">
+         <%= yield %>
+      </div>
     </div>
 
   </body>

@@ -22,4 +22,6 @@ Rails.application.routes.draw do
 
   get 'thanks', to: 'pages#student_comm_thanks', as: 'student_comm_thanks'
 
+  get 'ask_tutor', to: 'pages#ask_tutor', as: 'ask_tutor'
+
 end

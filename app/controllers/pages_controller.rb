@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def page_three
+    render :layout => 'plain'
   end
 
   def page_four
@@ -45,6 +46,10 @@ class PagesController < ApplicationController
   end
 
   def student_comm_thanks
+    render :layout => 'plain'
+  end
+
+  def ask_tutor
   end
 
 end

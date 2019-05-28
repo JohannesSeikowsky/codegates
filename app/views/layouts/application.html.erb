@@ -103,10 +103,11 @@
   </style>
 
   <body>
-    
+
+    <%= link_to "Ask a Tutor", ask_tutor_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold; position: fixed; top: 12px; right: 12px;" %> 
     
     <div id="container">
-        
+
       <div style="margin-bottom: 22px;">
         <%= link_to root_path, style: "text-decoration: none;" do %>
           <h1 style="margin: 0px 0px 4px 0px; font-size: 28px;"> Codegates Python </h1>
@@ -147,7 +148,7 @@
 
 
       <div id="lesson_content">
-         <%= yield %>
+          <%= yield %>
 
           <div style="margin-top: 22px" id="ask_tutor">
             <span style="font-weight: bold; font-size: 18px;"> 
@@ -158,12 +159,12 @@
           <div style="margin-top: 8px;">
             <%= form_for :student_communication, url: student_communication_url do |f| %>
                 <%= f.text_field :content, placeholder: "Your Question",
-                    style: "width: 288px; height: 100px; margin-bottom: 6px;" %> <br>
+                    style: "width: 288px; height: 100px; margin-bottom: 6px;", :required => true %> <br>
                 
                 <%= f.text_field :student, placeholder: "Your Name",
-                    style: "width: 288px; height: 26px; margin-bottom: 12px;" %> <br>
+                    style: "width: 288px; height: 26px; margin-bottom: 12px;", :required => true %> <br>
 
-                <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 12px;" %> <br>
+                <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 12px;", :required => true %> <br>
 
                 <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
             <% end %>
