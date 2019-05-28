@@ -158,14 +158,12 @@
           <div style="margin-top: 8px;">
             <%= form_for :student_communication, url: student_communication_url do |f| %>
                 <%= f.text_field :content, placeholder: "Your Question",
-                    style: "width: 328px; height: 100px; margin-bottom: 6px;" %> <br>
+                    style: "width: 288px; height: 100px; margin-bottom: 6px;" %> <br>
                 
                 <%= f.text_field :student, placeholder: "Your Name",
-                    style: "width: 328px; height: 26px; margin-bottom: 12px;" %> <br>
-                <!--
-                <%= f.text_field :tutor, placeholder: "Your Tutor",
-                    style: "width: 255px; height: 26px; margin-bottom: 12px;" %> <br>
-                -->
+                    style: "width: 288px; height: 26px; margin-bottom: 12px;" %> <br>
+
+                <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 12px;" %> <br>
 
                 <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
             <% end %>
