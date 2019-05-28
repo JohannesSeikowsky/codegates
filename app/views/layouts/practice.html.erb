@@ -16,7 +16,7 @@
       font-family: "Verdana, Geneva, sans-serif"; 
       background-color: #F6F6EF;
       /* background-color: #F7EEE5; */
-      margin-top: 36px;
+      margin-top: 12px;
       margin-bottom: 125px;
       font-size: 15px;
     }
@@ -27,7 +27,7 @@
 
     #container{
       width: 1040px;
-      margin-left: 100px;
+      margin: auto;
     }
 
     #course_title{
@@ -86,56 +86,15 @@
     
     <div id="container">
       
-    <span style="background-color: orange; font-size: 18px; font-weight: bold;"> Classes are on each evening, 18.00-19.00 and 19.00-20.00. You can choose freely. </span>
+      <%= link_to root_path, style: "text-decoration: none;" do %>
+        <h1 style="margin: 0px 0px 4px 0px; font-size: 28px;"> Codegates Python </h1>
+      <% end %>
 
-      <!--
-      <h3 id="course_title"> Programming with Python </h3>
+      <!-- 
+        <span style="font-size: 20px; font-weight: bold;"> Practice Environment </span>
       -->
-
-      <h3 id="course_title"> Codegates Python - The Minimum to be Dangerous </h3>
-
-      <div id="side_bar">
-        <%= link_to "1. Repl.it", page_two_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_three_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "2. Built-in Functions", page_four_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_five_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "3. Programming Languages", page_six_path, class: "side_bar_links" %>
-        <%= link_to "4. Strings & String-Functions", page_seven_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_eight_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "5. Comments", page_nine_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_ten_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "6. Variables", page_eleven_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_twelve_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "7. Case Study 1", page_thirteen_path, class: "side_bar_links" %>
-
-        <br>
-        <span style="font-size: 13px; background-color: lightgrey;"> More Tutorials will <br> be released here continually <br> in tandem with classes! </span>
-
-
-        <!--
-        <%= link_to "Practice", page_fourteen_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-        -->
-
-
-        <!--
-        <br>
-        <p> This series of video tutorials and exercises <br> is to understand the necessary basics of Python, <br>
-          so youre able to get to work on a project. <br> The date of the next Co-coding eveing is
-          always published on top of this site. <br> Below each video you have a direct Line to
-          your tutor. All exercise results you submit will be received by your tutor, he;ll get back to you with comments.
-        </p>
-        -->
-
-      </div>
-
-      <div id="lesson_content">
-        <%= yield %>
-      </div>
+   
+      <%= yield %>
 
     </div>
 

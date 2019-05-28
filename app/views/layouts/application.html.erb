@@ -28,7 +28,7 @@
 
     #container{
       width: 1040px;
-      margin-left: 100px;
+      margin: auto;
     }
 
     #course_title{
@@ -81,31 +81,40 @@
       /* background-color: #B0E46E; */
       text-decoration: underline;
     }
+
+    .vid_title{
+      font-weight: bold; 
+      font-size: 18px;
+    }
+
+    .vid_description{
+      margin-top: 6px;
+      width: 468px;
+      line-height: 1.32;
+    }
+
+    .to_practice_btn{
+      background-color: #DEDED4; 
+      padding: 4px 12px;
+      text-decoration: none;
+      font-size: 15px;
+      border: 2px solid lightgrey;
+    }
   </style>
 
   <body>
     
     
     <div id="container">
+        
+      <div style="margin-bottom: 22px;">
+        <%= link_to root_path, style: "text-decoration: none;" do %>
+          <h1 style="margin: 0px 0px 4px 0px; font-size: 28px;"> Codegates Python </h1>
+          <h2 style="margin: 0px 0px 10px 0px; font-size: 18px;"> The Minimum to be dangerous </h2>
+        <% end %>
+      </div>
+
       
-    <div>
-      <%= link_to root_path, style: "text-decoration: none;" do %>
-        <h1 style="margin: 0px 0px 4px 0px; font-size: 28px;"> Codegates Python </h1>
-        <h2 style="margin: 0px 0px 10px 0px; font-size: 18px;"> The Minimum to be dangerous </h2>
-      <% end %>
-
-
-      <div style="margin: 0px 0px 22px 0px;"> <span style="background-color: orange; font-size: 18px; font-weight: bold;"> Classes are on each evening, 18.00-19.00 and 19.00-20.00 </span> </div>
-    </div>
-      
-      <!--
-      <h3 id="course_title"> Programming with Python </h3>
-      -->
-
-      <!--
-      <h3 id="course_title"> Codegates Python - The Minimum to be Dangerous </h3>
-      `-->
-
       <div id="side_bar">
         <%= link_to "1. Repl.it", page_two_path, class: "side_bar_links" %>
         <%= link_to "Practice", page_three_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
@@ -125,47 +134,14 @@
 
         <%= link_to "7. Case Study 1", page_thirteen_path, class: "side_bar_links" %>
 
-        <br>
-        <span style="font-size: 13px; background-color: lightgrey;"> More Tutorials will <br> be released here continually <br> in tandem with classes. </span>
 
+        <br> <br>
+        <p style="font-weight: bold; font-size: 18px; margin-bottom: 6px;"> Announcements </p>
 
-        <!--
-        <%= link_to "1. Repl.it", page_two_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_three_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+        <span style="font-size: 15px;"> More Tutorials will <br> continually be released in <br> tandem with our classes. </span>
+        <br> <br>
 
-        <%= link_to "2. Built-in Functions", page_four_path, class: "side_bar_links" %>
-        <%= link_to "Practice", "https://repl.it/student/submissions/6088703", target: "_blank", class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "3. Programming Languages", page_six_path, class: "side_bar_links" %>
-        <%= link_to "4. Strings & String-Functions", page_seven_path, class: "side_bar_links" %>
-        <%= link_to "Practice", "https://repl.it/student/submissions/6108568", target: "_blank", class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "5. Comments", page_nine_path, class: "side_bar_links" %>
-        <%= link_to "Practice", "https://repl.it/student/submissions/6112964", target: "_blank", class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "6. Variables", page_eleven_path, class: "side_bar_links" %>
-        <%= link_to "Practice", "https://repl.it/student/submissions/6114912", target: "_blank", class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-
-        <%= link_to "7. Case Study 1", page_thirteen_path, class: "side_bar_links" %>
-        -->
-
-
-        <!--
-        <%= link_to "Practice", page_fourteen_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
-        -->
-        <!--
-        <%= link_to "9. ", page_eight_path, class: "side_bar_links" %>
-        <%= link_to "10. ", page_eight_path, class: "side_bar_links" %>
-        -->
-
-        <!--
-        <br>
-        <p> This series of video tutorials and exercises <br> is to understand the necessary basics of Python, <br>
-          so youre able to get to work on a project. <br> The date of the next Co-coding eveing is
-          always published on top of this site. <br> Below each video you have a direct Line to
-          your tutor. All exercise results you submit will be received by your tutor, he;ll get back to you with comments.
-        </p>
-        -->
+        <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px;"> Classes are on each evening <br> of the week 18.00-19.00 and <br> 19.00-20.00 UK-time. </span> </div>
 
       </div>
 
@@ -173,8 +149,8 @@
       <div id="lesson_content">
          <%= yield %>
 
-          <div style="margin-top: 18px" id="ask_tutor">
-            <span style="font-weight: bold; font-size: 16px;"> 
+          <div style="margin-top: 22px" id="ask_tutor">
+            <span style="font-weight: bold; font-size: 18px;"> 
               Ask a Tutor
             </span>
           </div>
@@ -182,19 +158,16 @@
           <div style="margin-top: 8px;">
             <%= form_for :student_communication, url: student_communication_url do |f| %>
                 <%= f.text_field :content, placeholder: "Your Question",
-                    style: "width: 468px; height: 100px; margin-bottom: 6px;" %> <br>
+                    style: "width: 328px; height: 100px; margin-bottom: 6px;" %> <br>
                 
                 <%= f.text_field :student, placeholder: "Your Name",
-                    style: "width: 255px; height: 26px; margin-bottom: 12px;" %> <br>
+                    style: "width: 328px; height: 26px; margin-bottom: 12px;" %> <br>
                 <!--
                 <%= f.text_field :tutor, placeholder: "Your Tutor",
                     style: "width: 255px; height: 26px; margin-bottom: 12px;" %> <br>
                 -->
 
-                <%= f.submit "submit", style: "cursor: pointer; font-size: 13px; margin-top: 0px;" %> <br> <br>
-                <!--
-                <span style="text-decoration: underline;"> Current Tutors: Johannes, Alfred, Marcello, Oleg </span> <br>
-                -->
+                <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
             <% end %>
           </div>
       </div>
