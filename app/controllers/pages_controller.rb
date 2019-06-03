@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
-  layout "practice", only: [:page_one, :page_three, :page_five, :page_eight, :page_ten, :page_twelve, :page_fourteen]
+  layout "practice", only: [:page_three, :page_five, :page_eight, :page_ten, :page_twelve, :page_fourteen]
 
   def page_one
-
+    render :layout => 'plain'
   end
 
   def page_two

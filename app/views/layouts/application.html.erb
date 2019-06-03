@@ -48,8 +48,8 @@
     }
 
     .practice_link{
-      color: #565656;
-      margin-bottom: 10px;
+      color: #262626;
+      margin-bottom: 12px;
     }
 
     #lesson_content{
@@ -104,12 +104,19 @@
 
   <body>
 
-    <%= link_to "Ask a Tutor", ask_tutor_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold; position: fixed; top: 12px; right: 12px;" %> 
+
+
     
-    <div id="container">
+    <div id="container" style="position: relative;">
+
+      <div style="position: absolute; right: 0px; top: 10px;">
+      <%= link_to "Ask a tutor", ask_tutor_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold;" %> 
+
+      <%= link_to "Join our evening classes", ask_tutor_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold;" %> 
+      </div>
 
       <div style="margin-bottom: 22px;">
-        <%= link_to root_path, style: "text-decoration: none;" do %>
+        <%= link_to root_path, style: "text-decoration: none; position: inline;" do %>
           <h1 style="margin: 0px 0px 4px 0px; font-size: 28px;"> Codegates Python </h1>
           <h2 style="margin: 0px 0px 10px 0px; font-size: 18px;"> The Minimum to be dangerous </h2>
         <% end %>
@@ -117,33 +124,34 @@
 
       
       <div id="side_bar">
-        <%= link_to "1. Repl.it", page_two_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_three_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+        <%= link_to "1. Quick Intro", page_one_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
 
-        <%= link_to "2. Built-in Functions", page_four_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_five_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+        <%= link_to "2. Repl.it", page_two_path, class: "side_bar_links" %>
+        <%= link_to "2.1. Practice", page_three_path, class: "side_bar_links practice_link" %>
 
-        <%= link_to "3. Programming Languages", page_six_path, class: "side_bar_links" %>
-        <%= link_to "4. Strings & String-Functions", page_seven_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_eight_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+        <%= link_to "3. Built-in Functions", page_four_path, class: "side_bar_links" %>
+        <%= link_to "3.1. Practice", page_five_path, class: "side_bar_links practice_link" %>
 
-        <%= link_to "5. Comments", page_nine_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_ten_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+        <%= link_to "4. Programming Languages", page_six_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+        <%= link_to "5. Strings & String-Functions", page_seven_path, class: "side_bar_links" %>
+        <%= link_to "5.1. Practice", page_eight_path, class: "side_bar_links practice_link" %>
 
-        <%= link_to "6. Variables", page_eleven_path, class: "side_bar_links" %>
-        <%= link_to "Practice", page_twelve_path, class: "side_bar_links practice_link", style: "margin-left: 16px;" %>
+        <%= link_to "6. Comments", page_nine_path, class: "side_bar_links" %>
+        <%= link_to "6.1. Practice", page_ten_path, class: "side_bar_links practice_link" %>
 
-        <%= link_to "7. Case Study 1", page_thirteen_path, class: "side_bar_links" %>
+        <%= link_to "7. Variables", page_eleven_path, class: "side_bar_links" %>
+        <%= link_to "7.1 Practice", page_twelve_path, class: "side_bar_links practice_link" %>
 
+        <%= link_to "8. Case Study 1", page_thirteen_path, class: "side_bar_links" %>
 
-        <br> <br>
-        <p style="font-weight: bold; font-size: 18px; margin-bottom: 6px;"> Announcements </p>
+        <br>
 
-        <span style="font-size: 15px;"> More Tutorials will <br> continually be released in <br> tandem with our classes. </span>
-        <br> <br>
+        <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px; font-weight: bold; line-height: 1.32; text-decoration: underline;"> More Tutorials are being  <br> released here continually. </span> </div>
 
-        <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px;"> Classes are on each evening <br> of the week 18.00-19.00 and <br> 19.00-20.00 UK-time. </span> </div>
-
+        <!--
+        <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px;  text-decoration: underline;"> Classes are on each evening <br> of the week 18.00-19.00 and <br> 19.00-20.00 UK-time. </span> </div>
+        -->
+        
       </div>
 
 

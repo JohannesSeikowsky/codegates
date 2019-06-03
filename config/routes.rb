@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'pages#page_two'
+  root 'pages#page_one'
 
   get 'lesson_one', to: 'pages#page_one', as: 'page_one'
   get 'lesson_two', to: 'pages#page_two', as: 'page_two'
