@@ -1,24 +1,39 @@
 
 <div style="width: 300px;">
-	  <p style="text-decoration: underline; width: 760px;"> Join our evening classes </p>
+	  <!--
+    <p style="text-decoration: underline;"> Join our evening classes </p>
+    -->
 
-      <div style="margin-top: 22px" id="ask_tutor">
-        <span style="font-weight: bold; font-size: 18px;"> 
-          Ask a Tutor
-        </span>
-      </div>
+
+    <p style="text-decoration: underline; margin: 0px 0px 10px 0px;"> 
+      About our Evening Classes
+    </p>
+
+    <p style=""> 
+      We do our evening classes every day of the week, Monday-Friday. One from 18.00-19.00 and another from 19.00-20.00, UK-time. <br> <br>
+      We charge £12.95 per class/week. You can join your first class as a free test. As a rule, our students join one class per week to master the basics of Python.
+    </p>
+
+
+    <p style="text-decoration: underline; margin: 28px 0px 10px 0px;"> 
+      Join a Test Class
+    </p>
+
 
       <div style="margin-top: 8px;">
         <%= form_for :student_communication, url: student_communication_url do |f| %>
-            <%= f.text_field :content, placeholder: "Your Question",
-                style: "width: 288px; height: 100px; margin-bottom: 6px;", :required => true %> <br>
-            
+
+
             <%= f.text_field :student, placeholder: "Your Name",
-                style: "width: 288px; height: 26px; margin-bottom: 12px;", :required => true %> <br>
+                style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
 
-            <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 12px;", :required => true %> <br>
+            <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
 
-            <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
+            <p> Which time slot would suit you to join a test class? See first paragraph for available times. </p>
+            <%= f.text_field :content, placeholder: "e.g. Thursday next week, 19.00-20.00",
+                style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
+
+            <%= f.submit "Join", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
         <% end %>
       </div>
 </div>
