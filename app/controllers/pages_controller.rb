@@ -50,6 +50,11 @@ class PagesController < ApplicationController
   end
 
   def ask_tutor
+    render :layout => 'plain'
+  end
+
+  def join_class
+    render :layout => 'plain'    
   end
 
 end

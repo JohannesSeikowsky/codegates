@@ -24,4 +24,6 @@ Rails.application.routes.draw do
 
   get 'ask_tutor', to: 'pages#ask_tutor', as: 'ask_tutor'
 
+  get 'join_class', to: 'pages#join_class', as: 'join_class'
+
 end
