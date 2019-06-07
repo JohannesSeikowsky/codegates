@@ -1,24 +1,29 @@
 
 <div style="width: 300px;">
-	  <!--
-    <p style="text-decoration: underline;"> Join our evening classes </p>
-    -->
 
+    <!-- More comprehensive version -->
 
     <p style="text-decoration: underline; margin: 0px 0px 10px 0px;"> 
-      About our Evening Classes
+      Basic Info
     </p>
 
-    <p style=""> 
-      We do our evening classes every day of the week, Monday-Friday. One from 18.00-19.00 and another from 19.00-20.00, UK-time.
-      Every class has a max. of 6 students and 1 coding tutor. <br> <br>
-
-      We charge £12.95 per class/week. You can join your first class as a free test. As a rule, our students continuously attend one class per week to master the basics of Python.
+    <p style="">
+      We do two online evening classes every day of the week, Monday-Friday. One from 18.00-19.00 and
+      another from 19.00-20.00 (UK-time). Each class has up to 6 students and 1 coding tutor. 
+      <br> <br>
+      As a rule, our students attend one class per week on a relatively continuous basis.
+      <br> <br>
+      In general our goal is to teach people enough Python so they can use coding for their own purposes. To that end we firstly cover the
+      basics of Python (8-10 classes) and then move each student on to a real coding project he/she actually wants to code.
+      <br> <br>
+      We charge £12.95 per class/week and you can join your first class as a free trial.
+      <br> <br>
+      If you have any questions, you can use the Ask-a-Tutor button (top-right) to ask. If you'd like to join a class as a trial, you can do so using the form below.
     </p>
 
 
     <p style="text-decoration: underline; margin: 28px 0px 10px 0px;"> 
-      Join a Free Test Class
+      Join Trial Class
     </p>
 
 
@@ -31,8 +36,8 @@
 
             <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
 
-            <p> Which time slot would suit you to join a test class? See first paragraph for available times. </p>
-            <%= f.text_field :content, placeholder: "e.g. Thursday next week, 19.00-20.00",
+            <p> Which time slot would suit you to join a trial class? Available times: Monday-Friday, 18.00-19.00 or 19.00-20.00. </p>
+            <%= f.text_field :content, placeholder: "Thursday next week, 19.00-20.00",
                 style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
 
             <%= f.submit "Join", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
