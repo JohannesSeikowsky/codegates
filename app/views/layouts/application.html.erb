@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <link rel="shortcut icon" type="image/png" href="https://codegates.com/assets/images/favicon.png?v37705171731551"/>
+    <%= favicon_link_tag asset_path('cgates_logo.png'), :rel => 'icon', :type =>  'image/png' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
