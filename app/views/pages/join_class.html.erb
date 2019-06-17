@@ -4,9 +4,17 @@
     <!-- More comprehensive version -->
 
     <p style="text-decoration: underline; margin: 0px 0px 10px 0px;"> 
-      Online Evening Classes
+      Online Classes
     </p>
 
+    <p>
+We host online classes of one hour every evening of the week (except Saturdays). You are free to pick any one of three possible time slots below. 
+<br> <br>
+We charge £12.95 per week and you are free to cancel anytime (see our FAQ page for more details). If you have any more questions, don’t hesitate to Contact a Tutor.
+    </p>
+
+
+    <!--
     <p style="">
       We do online evening classes every day of the week except Saturdays. The classes start daily at
       18.00, 19.00 and 20.00 respectively, UK-time, and last one hour each.
@@ -16,7 +24,6 @@
       <br> <br>
       As a rule, most students attend one class per week on a relatively continuous basis.
       <br> <br>
-      <!-- In general our goal is to teach people enough Python so they can use coding for their own purposes. To that end -->
       We firstly cover the
       basics of Python (8-10 classes) and then move each student on to a real project he/she actually wants to code.
       <br> <br>
@@ -28,15 +35,37 @@
       <%= link_to "time slot from our calendar", "https://appoint.ly/s/python_classes/times", target: "_blank" %>
       or use the form below.
     </p>
+    `-->
 
 
     <p style="text-decoration: underline; margin: 28px 0px 10px 0px;"> 
-      Join a Class
+      Join now!
     </p>
 
 
       <div style="margin-top: 8px;">
         <%= form_for :student_communication, url: student_communication_url do |f| %>
+
+            <p> Preferred day </p>
+            <%= f.radio_button :content, "Monday" %> 
+            <%= f.label :content, "Monday", :value => "Monday"  %>
+            <br>
+            <%= f.radio_button :content, "Tuesday" %> 
+            <%= f.label :content, "Tuesday", :value => "Tuesday" %>
+            <br>
+            <%= f.radio_button :content, "Wednesday" %> 
+            <%= f.label :content, "Wednesday", :value => "Wednesday"  %>
+            <br>
+            <%= f.radio_button :content, "Thursday" %> 
+            <%= f.label :content, "Thursday", :value => "Thursday" %>
+            <br>
+            <%= f.radio_button :content, "Friday" %> 
+            <%= f.label :content, "Friday", :value => "Friday"  %>
+            <br>
+            <%= f.radio_button :content, "Sunday" %> 
+            <%= f.label :content, "Sunday", :value => "Sunday" %>
+            <br>
+            <p> Preferred time </p>
 
 
             <%= f.text_field :student, placeholder: "Your Name",
@@ -44,11 +73,13 @@
 
             <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
 
+
+            <!--
             <p> Which time slot would suit you? Available times: Every week, Monday-Friday and Sunday, 18.00-19.00, 19.00-20.00 or 20.00-21.00, UK-time. </p>
             <%= f.text_field :content, placeholder: "e.g. Thursday next week, 19.00-20.00",
                 style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
-
-            <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
+            -->
+            <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %>
         <% end %>
       </div>
 </div>
