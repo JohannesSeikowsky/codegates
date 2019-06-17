@@ -56,7 +56,24 @@
 
             <div style="width: 335px; height: 182px;">
             <div style="width: 136px; float: left;">
-
+            <p style="text-decoration: none;"> Preferred day </p>
+            <%= f.radio_button :content, "Monday" %> 
+            <%= f.label :content, "Monday", :value => "Monday"  %>
+            <br>
+            <%= f.radio_button :content, "Tuesday" %> 
+            <%= f.label :content, "Tuesday", :value => "Tuesday" %>
+            <br>
+            <%= f.radio_button :content, "Wednesday" %> 
+            <%= f.label :content, "Wednesday", :value => "Wednesday"  %>
+            <br>
+            <%= f.radio_button :content, "Thursday" %> 
+            <%= f.label :content, "Thursday", :value => "Thursday" %>
+            <br>
+            <%= f.radio_button :content, "Friday" %> 
+            <%= f.label :content, "Friday", :value => "Friday"  %>
+            <br>
+            <%= f.radio_button :content, "Sunday" %> 
+            <%= f.label :content, "Sunday", :value => "Sunday" %>
             </div>
             
             <div style="width: 150px; float: left;">
@@ -72,10 +89,6 @@
             </div>
             </div>
             <%= f.submit "Submit & Join Class", style: "cursor: pointer; font-size: 14px; padding: 4px 8px 4px 8px;" %>
-
-
-            <br> 
-
         <% end %>
       </div>
 </div>
