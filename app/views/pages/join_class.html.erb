@@ -79,13 +79,13 @@
             <div style="width: 150px; float: left;">
             <p style="text-decoration: none;"> Preferred time (UK) </p>
             <%= f.radio_button :content, "18.00-19.00" %> 
-            <%= f.label :content, "18.00-19.00", :value => "18.00-19.00" %>
+            <%= f.label :time, "18.00-19.00", :value => "18.00-19.00" %>
             <br>
             <%= f.radio_button :content, "19.00-20.00" %> 
-            <%= f.label :content, "19.00-20.00", :value => "19.00-20.00"  %>
+            <%= f.label :time, "19.00-20.00", :value => "19.00-20.00"  %>
             <br>
             <%= f.radio_button :content, "20.00-21.00" %> 
-            <%= f.label :content, "20.00-21.00", :value => "20.00-21.00"  %>
+            <%= f.label :time, "20.00-21.00", :value => "20.00-21.00"  %>
             </div>
             </div>
             <%= f.submit "Submit & Join Class", style: "cursor: pointer; font-size: 14px; padding: 4px 8px 4px 8px;" %>

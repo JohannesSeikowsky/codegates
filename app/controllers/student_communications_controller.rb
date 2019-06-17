@@ -14,7 +14,7 @@ class StudentCommunicationsController < ApplicationController
 
 	# setting params
     def student_communication_params
-      params.require(:student_communication).permit(:content, :student, :tutor)
+      params.require(:student_communication).permit(:content, :student, :tutor, :time)
     end
 
 end
