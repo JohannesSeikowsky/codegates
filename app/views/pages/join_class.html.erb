@@ -11,8 +11,8 @@
       We host online classes of one hour every evening of the week (except Saturdays). You are free to pick any one of three possible time slots below. 
       <br> <br>
       We charge £12.95 per week and you are free to cancel anytime (see our 
-      <%= link_to "FAQ page", faq_path %>
-      for more details). If you have any more questions, don’t hesitate to 
+      <%= link_to "FAQ", faq_path %>
+      page for more details). If you have any more questions, don’t hesitate to 
       <%= link_to "Contact a Tutor", ask_tutor_path %>.
     </p>
 
@@ -78,13 +78,13 @@
             
             <div style="width: 150px; float: left;">
             <p style="text-decoration: none;"> Preferred time (UK) </p>
-            <%= f.radio_button :content, "18.00-19.00" %> 
+            <%= f.radio_button :time, "18.00-19.00" %> 
             <%= f.label :time, "18.00-19.00", :value => "18.00-19.00" %>
             <br>
-            <%= f.radio_button :content, "19.00-20.00" %> 
+            <%= f.radio_button :time, "19.00-20.00" %> 
             <%= f.label :time, "19.00-20.00", :value => "19.00-20.00"  %>
             <br>
-            <%= f.radio_button :content, "20.00-21.00" %> 
+            <%= f.radio_button :time, "20.00-21.00" %> 
             <%= f.label :time, "20.00-21.00", :value => "20.00-21.00"  %>
             </div>
             </div>
