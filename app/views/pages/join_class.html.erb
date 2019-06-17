@@ -8,9 +8,12 @@
     </p>
 
     <p>
-We host online classes of one hour every evening of the week (except Saturdays). You are free to pick any one of three possible time slots below. 
-<br> <br>
-We charge £12.95 per week and you are free to cancel anytime (see our FAQ page for more details). If you have any more questions, don’t hesitate to Contact a Tutor.
+      We host online classes of one hour every evening of the week (except Saturdays). You are free to pick any one of three possible time slots below. 
+      <br> <br>
+      We charge £12.95 per week and you are free to cancel anytime (see our 
+      <%= link_to "FAQ page", faq_path %>
+      for more details). If you have any more questions, don’t hesitate to 
+      <%= link_to "Contact a Tutor", ask_tutor_path %>.
     </p>
 
 
@@ -39,14 +42,21 @@ We charge £12.95 per week and you are free to cancel anytime (see our FAQ page 
 
 
     <p style="text-decoration: underline; margin: 28px 0px 10px 0px;"> 
-      Join now!
+      Join a Class
     </p>
 
 
       <div style="margin-top: 8px;">
         <%= form_for :student_communication, url: student_communication_url do |f| %>
 
-            <p> Preferred day </p>
+            <%= f.text_field :student, placeholder: "Your Name",
+                style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
+
+            <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
+
+            <div style="width: 335px; height: 182px;">
+            <div style="width: 136px; float: left;">
+            <p style="text-decoration: none;"> Preferred day </p>
             <%= f.radio_button :content, "Monday" %> 
             <%= f.label :content, "Monday", :value => "Monday"  %>
             <br>
@@ -64,23 +74,25 @@ We charge £12.95 per week and you are free to cancel anytime (see our FAQ page 
             <br>
             <%= f.radio_button :content, "Sunday" %> 
             <%= f.label :content, "Sunday", :value => "Sunday" %>
+            </div>
+            
+            <div style="width: 150px; float: left;">
+            <p style="text-decoration: none;"> Preferred time (UK) </p>
+            <%= f.radio_button :content, "18.00-19.00" %> 
+            <%= f.label :content, "18.00-19.00", :value => "18.00-19.00" %>
             <br>
-            <p> Preferred time </p>
+            <%= f.radio_button :content, "19.00-20.00" %> 
+            <%= f.label :content, "19.00-20.00", :value => "19.00-20.00"  %>
+            <br>
+            <%= f.radio_button :content, "20.00-21.00" %> 
+            <%= f.label :content, "20.00-21.00", :value => "20.00-21.00"  %>
+            </div>
+            </div>
+            <%= f.submit "Submit & Join Class", style: "cursor: pointer; font-size: 14px; padding: 4px 8px 4px 8px;" %>
 
 
-            <%= f.text_field :student, placeholder: "Your Name",
-                style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
+            <br> 
 
-            <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
-
-
-            <!--
-            <p> Which time slot would suit you? Available times: Every week, Monday-Friday and Sunday, 18.00-19.00, 19.00-20.00 or 20.00-21.00, UK-time. </p>
-            <%= f.text_field :content, placeholder: "e.g. Thursday next week, 19.00-20.00",
-                style: "width: 288px; height: 26px; margin-bottom: 8px;", :required => true %> <br>
-            -->
-            <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %>
         <% end %>
       </div>
 </div>
-
