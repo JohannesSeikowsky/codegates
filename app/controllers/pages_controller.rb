@@ -66,6 +66,10 @@ class PagesController < ApplicationController
     render :layout => 'plain'    
   end
 
+  def join
+    render :layout => 'plain'    
+  end
+
   def faq
     render :layout => 'plain'
   end

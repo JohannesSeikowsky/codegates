@@ -27,5 +27,6 @@ Rails.application.routes.draw do
   get 'faq', to: 'pages#faq', as: 'faq'
 
   get 'join_class', to: 'pages#join_class', as: 'join_class'
+  get 'join', to: 'pages#join', as: 'join'
 
 end
