@@ -1,58 +1,65 @@
 class PagesController < ApplicationController
-  layout "practice", only: [:page_three, :page_five, :page_eight, :page_ten, :page_twelve, :page_fourteen]
+  layout "practice", only: [:practice_init, :practice_builtin_functions, :practice_strings, :practice_comments, :practice_variables]
 
-  def page_one
-    @current = "lesson_one"
+  def intro
+    @current = "intro"
     render :layout => 'plain'
   end
 
-  def page_two
-    @current = "lesson_two"
+  def repl_it
+    @current = "repl_it"
   end
 
-  def page_three
-    @current = "first_practice"
+  def practice_repl_it
+    @current = "practice_repl_it"
     render :layout => 'plain'
   end
 
-  def page_four
-    @current = "lesson_four"
+  def builtin_functions
+    @current = "builtin_functions"
   end
 
-  def page_five
+  def practice_builtin_functions
   end
 
-  def page_six
-    @current = "lesson_six"
+  def programming_languages
+    @current = "programming_languages"
   end
 
-  def page_seven
-    @current = "lesson_seven"
+  def strings
+    @current = "strings"
   end
 
-  def page_eight
+  def practice_strings
   end
 
-  def page_nine
-    @current = "lesson_nine"
+  def packages_preview
+    @current = "packages_preview"
   end
 
-  def page_ten
+  def comments
+    @current = "comments"
   end
 
-  def page_eleven
-    @current = "lesson_eleven"
+  def practice_comments
   end
 
-  def page_twelve
+  def variables
+    @current = "variables"
   end
 
-  def page_thirteen
-    @current = "lesson_thirteen"
+  def practice_variables
   end
 
-  def page_fourteen
+  def numbers
+    @current = "numbers"
   end
+
+  def case_study_one
+    @current = "case_study_one"
+  end
+
+
 
   def student_comm_thanks
     render :layout => 'plain'

@@ -134,83 +134,101 @@
       
       <div id="side_bar">
         <div style="position: relative;">
-          <%= link_to "Quick Intro", page_one_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
-          <% if @current == "lesson_one" %>
+          <%= link_to "Quick Intro", intro_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+          <% if @current == "intro" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "1. Repl.it", page_two_path, class: "side_bar_links", style: "position: relative;" %>
+          <%= link_to "1. Repl.it", repl_it_path, class: "side_bar_links", style: "position: relative;" %>
 
-          <% if @current == "lesson_two" %>
+          <% if @current == "repl_it" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "1.1. Practice", page_three_path, class: "side_bar_links practice_link" %>
+          <%= link_to "1.1. Practice", practice_repl_it_path, class: "side_bar_links practice_link" %>
 
-          <% if @current == "first_practice" %>
+          <% if @current == "practice_repl_it" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
         
         <div style="position: relative;">
-          <%= link_to "2. Built-in Functions", page_four_path, class: "side_bar_links" %>
+          <%= link_to "2. Built-in Functions", builtin_functions_path, class: "side_bar_links" %>
         
-            <% if @current == "lesson_four" %>
+            <% if @current == "builtin_functions" %>
               <div class="link_overlay"> A </div>
           <% end %>
         </div>
 
-        <%= link_to "2.1. Practice", page_five_path, class: "side_bar_links practice_link" %>
+        <%= link_to "2.1. Practice", practice_builtin_functions_path, class: "side_bar_links practice_link" %>
         
         <div style="position: relative;">
-          <%= link_to "3. Programming Languages", page_six_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+          <%= link_to "3. Programming Languages", programming_languages_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
 
-          <% if @current == "lesson_six" %>
+          <% if @current == "programming_languages" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "4. Strings & String-Functions", page_seven_path, class: "side_bar_links" %>
+          <%= link_to "4. Strings & String-Functions", strings_path, class: "side_bar_links" %>
           
-          <% if @current == "lesson_seven" %>
+          <% if @current == "strings" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
-        <%= link_to "4.1. Practice", page_eight_path, class: "side_bar_links practice_link" %>
+        <%= link_to "4.1. Practice", practice_strings_path, class: "side_bar_links practice_link" %>
 
         <div style="position: relative;">
-          <%= link_to "5. Comments", page_nine_path, class: "side_bar_links" %>
-
-          <% if @current == "lesson_nine" %>
+          <%= link_to "5. Packages (Preview)", packages_preview_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+          
+          <% if @current == "packages_preview" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
-        <%= link_to "5.1. Practice", page_ten_path, class: "side_bar_links practice_link" %>
 
         <div style="position: relative;">
-          <%= link_to "6. Variables", page_eleven_path, class: "side_bar_links" %>
+          <%= link_to "6. Comments", comments_path, class: "side_bar_links" %>
+
+          <% if @current == "comments" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+        <%= link_to "6.1. Practice", practice_comments_path, class: "side_bar_links practice_link" %>
+
+        <div style="position: relative;">
+          <%= link_to "7. Variables", variables_path, class: "side_bar_links" %>
         
-          <% if @current == "lesson_eleven" %>
+          <% if @current == "variables" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
-        <%= link_to "6.1 Practice", page_twelve_path, class: "side_bar_links practice_link" %>
+        <%= link_to "7.1 Practice", practice_variables_path, class: "side_bar_links practice_link" %>
 
         <div style="position: relative;">
-          <%= link_to "7. Case Study 1", page_thirteen_path, class: "side_bar_links" %>
-          
-          <% if @current == "lesson_thirteen" %>
+          <%= link_to "8. Numbers", numbers_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+        
+          <% if @current == "numbers" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
 
+        <div style="position: relative;">
+          <%= link_to "9. Case Study 1", case_study_one_path, class: "side_bar_links" %>
+          
+          <% if @current == "case_study_one" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <!--
         <br>
         <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px; font-weight: bold; line-height: 1.32; text-decoration: underline;"> More Tutorials are  <br> coming ... </span> </div>
+        -->
 
         <!--
         <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px;  text-decoration: underline;"> Classes are on each evening <br> of the week 18.00-19.00 and <br> 19.00-20.00 UK-time. </span> </div>
