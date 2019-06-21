@@ -61,30 +61,37 @@ class PagesController < ApplicationController
 
   def lists
     @current = "lists"
+    render :layout => 'plain'
   end
 
   def if_statements
     @current = "if_statements"
-  end
+    render :layout => 'plain'
+end
 
   def for_loops
     @current = "for_loops"
+    render :layout => 'plain'
   end
 
   def dictionaries
     @current = "dictionaries"
+    render :layout => 'plain'
   end
 
   def practice_project_one
     @current = "practice_project_one"
+    render :layout => 'plain'
   end
 
   def practice_project_two
     @current = "practice_project_two"
+    render :layout => 'plain'
   end
 
   def personal_project
     @current = "personal_project"
+    render :layout => 'plain'
   end
 
 
