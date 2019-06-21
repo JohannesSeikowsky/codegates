@@ -147,7 +147,7 @@
       
       <div id="side_bar">
         <div style="position: relative;">
-          <%= link_to "Quick Intro", intro_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+          <%= link_to "Intro", intro_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
           <% if @current == "intro" %>
             <div class="link_overlay"> A </div>
           <% end %>
@@ -231,9 +231,65 @@
         </div>
 
         <div style="position: relative;">
-          <%= link_to "9. Case Study 1", case_study_one_path, class: "side_bar_links" %>
+          <%= link_to "9. Case Study 1", case_study_one_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
           
           <% if @current == "case_study_one" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "10. Lists", lists_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+
+          <% if @current == "lists" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "11. If-Statements", if_statements_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+
+          <% if @current == "if_statements" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "12. For-Loops", for_loops_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+
+          <% if @current == "for_loops" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "13. Dictionaries", dictionaries_path, class: "side_bar_links", style: "margin-bottom: 30px;" %>
+
+          <% if @current == "dictionaries" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "14. Practice Project 1", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 12px;" %>
+
+          <% if @current == "practice_project_one" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "15. Practice Project 2", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 30px;" %>
+
+          <% if @current == "practice_project_two" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "16. Real Project (Start)", personal_project_path, class: "side_bar_links", style: "margin-bottom: 12px; text-decoration: underline;" %>
+
+          <% if @current == "personal_project" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>

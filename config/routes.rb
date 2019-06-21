@@ -27,8 +27,22 @@ Rails.application.routes.draw do
   get 'numbers', to: 'pages#numbers', as: 'numbers'
   
   get 'case_study_one', to: 'pages#case_study_one', as: 'case_study_one'
- 
 
+  get 'lists', to: 'pages#lists', as: 'lists'
+
+  get 'if_statements', to: 'pages#if_statements', as: 'if_statements'
+
+  get 'for_loops', to: 'pages#for_loops', as: 'for_loops'
+
+  get 'dictionaries', to: 'pages#dictionaries', as: 'dictionaries'
+
+  get 'practice_project_one', to: 'pages#practice_project_one', as: 'practice_project_one'
+
+  get 'practice_project_two', to: 'pages#practice_project_two', as: 'practice_project_two'
+
+  get 'personal_project', to: 'pages#personal_project', as: 'personal_project'
+
+ 
   # others
   post 'communication', to: 'student_communications#create', as: 'student_communication'
 

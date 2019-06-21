@@ -59,6 +59,35 @@ class PagesController < ApplicationController
     @current = "case_study_one"
   end
 
+  def lists
+    @current = "lists"
+  end
+
+  def if_statements
+    @current = "if_statements"
+  end
+
+  def for_loops
+    @current = "for_loops"
+  end
+
+  def dictionaries
+    @current = "dictionaries"
+  end
+
+  def practice_project_one
+    @current = "practice_project_one"
+  end
+
+  def practice_project_two
+    @current = "practice_project_two"
+  end
+
+  def personal_project
+    @current = "personal_project"
+  end
+
+
 
 
   def student_comm_thanks
