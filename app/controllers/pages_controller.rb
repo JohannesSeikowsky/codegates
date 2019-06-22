@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  layout "practice", only: [:practice_init, :practice_builtin_functions, :practice_strings, :practice_comments, :practice_variables]
+  layout "practice", only: [:practice_init, :practice_builtin_functions, :practice_strings, :practice_comments, :practice_variables, 
+                                  :practice_lists, :practice_if_statements, :practice_for_loops, :practice_dictionaries]
 
   def intro
     @current = "intro"
@@ -64,19 +65,31 @@ class PagesController < ApplicationController
     render :layout => 'plain'
   end
 
+  def practice_lists
+  end
+
   def if_statements
     @current = "if_statements"
     render :layout => 'plain'
-end
+  end
+
+  def practice_if_statements
+  end
 
   def for_loops
     @current = "for_loops"
     render :layout => 'plain'
   end
 
+  def practice_for_loops
+  end
+
   def dictionaries
     @current = "dictionaries"
     render :layout => 'plain'
+  end
+
+  def practice_dictionaries
   end
 
   def practice_project_one
@@ -93,7 +106,6 @@ end
     @current = "personal_project"
     render :layout => 'plain'
   end
-
 
 
 

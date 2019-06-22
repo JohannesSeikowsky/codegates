@@ -29,12 +29,16 @@ Rails.application.routes.draw do
   get 'case_study_one', to: 'pages#case_study_one', as: 'case_study_one'
 
   get 'lists', to: 'pages#lists', as: 'lists'
+  get 'practice_lists', to: 'pages#practice_lists', as: 'practice_lists'
 
   get 'if_statements', to: 'pages#if_statements', as: 'if_statements'
+  get 'practice_if_statements', to: 'pages#practice_if_statements', as: 'practice_if_statements'
 
   get 'for_loops', to: 'pages#for_loops', as: 'for_loops'
+  get 'practice_for_loops', to: 'pages#practice_for_loops', as: 'practice_for_loops'
 
   get 'dictionaries', to: 'pages#dictionaries', as: 'dictionaries'
+  get 'practice_dictionaries', to: 'pages#practice_dictionaries', as: 'practice_dictionaries'
 
   get 'practice_project_one', to: 'pages#practice_project_one', as: 'practice_project_one'
 
