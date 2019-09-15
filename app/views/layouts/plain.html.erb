@@ -132,7 +132,7 @@
     <div id="container" style="position: relative;">
 
       <div style="position: absolute; right: 0px; top: 10px;">
-      <%= link_to "Python Cheatsheet", "https://repl.it/@JohannesSeikows/pythoncheatsheet", target: "_blank", style: "text-decoration: none; padding: 7px 28px; background-color: orange; font-weight: bold;" %> 
+      <%= link_to "Overview - Python", "https://repl.it/@JohannesSeikows/pythoncheatsheet", target: "_blank", style: "text-decoration: none; padding: 7px 28px; background-color: orange; font-weight: bold;" %> 
       
       <%= link_to "Ask a Question", ask_tutor_path, style: "text-decoration: none; padding: 7px 34px; background-color: orange; font-weight: bold;" %> 
       <%= link_to "(Re)schedule Class", "https://appoint.ly/s/coding_classes/timeslots", target: "_blank", style: "text-decoration: none; padding: 7px 28px; background-color: orange; font-weight: bold;" %>
@@ -205,7 +205,7 @@
         <%= link_to "3.1. Practice", practice_strings_path, class: "side_bar_links practice_link" %>
 
         <div style="position: relative;">
-          <%= link_to "4. Packages (Preview)", packages_preview_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
+          <%= link_to "4. Packages", packages_preview_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
           
           <% if @current == "packages_preview" %>
             <div class="link_overlay"> A </div>
@@ -239,7 +239,7 @@
         </div>
 
         <div style="position: relative;">
-          <%= link_to "8. Case Study 1", case_study_one_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
+          <%= link_to "8. Case Study", case_study_one_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
           
           <% if @current == "case_study_one" %>
             <div class="link_overlay"> A </div>
@@ -282,31 +282,34 @@
         </div>
         <%= link_to "12.1. Practice", practice_dictionaries_path, class: "side_bar_links practice_link", style: "margin-bottom: 14px;" %>
 
-        <div style="position: relative;">
-          <%= link_to "13. Project 1", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
 
-          <% if @current == "practice_project_one" %>
-            <div class="link_overlay"> A </div>
-          <% end %>
+        <div style="position: relative;">
+          <%= link_to "13. Project 1", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "14. Project 2", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
-
-          <% if @current == "practice_project_two" %>
-            <div class="link_overlay"> A </div>
-          <% end %>
+          <%= link_to "14. Project 2", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "15. Personal Project (Start)", personal_project_path, class: "side_bar_links", style: "text-decoration: underline;" %>
-
-          <% if @current == "personal_project" %>
-            <div class="link_overlay"> A </div>
-          <% end %>
+          <%= link_to "15. Revision", revision_one_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
         </div>
 
+        <div style="position: relative;">
+          <%= link_to "16. Project 3", practice_project_three_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
+        </div>
 
+        <div style="position: relative;">
+          <%= link_to "17. Project 4 (optional)", practice_project_four_path, class: "side_bar_links", style: "margin-bottom: 14px;  background-color: #F7E5BE; width: 214px;" %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "18. Revision", revision_two_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "19. Start Your Own Project", personal_project_path, class: "side_bar_links", style: "text-decoration: underline; background-color: #F7E5BE; width: 214px;" %>
+        </div>
 
         <!--
         <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px;  text-decoration: underline;"> Classes are on each evening <br> of the week 18.00-19.00 and <br> 19.00-20.00 UK-time. </span> </div>

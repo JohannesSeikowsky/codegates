@@ -102,6 +102,26 @@ class PagesController < ApplicationController
     render :layout => 'plain'
   end
 
+  def revision_one
+    @current = "revision_one"
+    render :layout => 'plain'
+  end
+
+  def revision_two
+    @current = "revision_two"
+    render :layout => 'plain'    
+  end
+
+  def practice_project_three
+    @current = "practice_project_three"
+    render :layout => 'plain'
+  end
+
+  def practice_project_four
+    @current = "practice_project_four"
+    render :layout => 'plain'
+  end
+
   def personal_project
     @current = "personal_project"
     render :layout => 'plain'

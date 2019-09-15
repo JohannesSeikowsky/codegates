@@ -44,6 +44,14 @@ Rails.application.routes.draw do
 
   get 'practice_project_two', to: 'pages#practice_project_two', as: 'practice_project_two'
 
+  get 'revision_one', to: 'pages#revision_one', as: 'revision_one'
+
+  get 'practice_project_three', to: 'pages#practice_project_three', as: 'practice_project_three'
+
+  get 'practice_project_four', to: 'pages#practice_project_four', as: 'practice_project_four'
+
+  get 'revision_two', to: 'pages#revision_two', as: 'revision_two'
+
   get 'personal_project', to: 'pages#personal_project', as: 'personal_project'
 
  
