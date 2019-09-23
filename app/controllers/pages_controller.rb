@@ -146,7 +146,7 @@ class PagesController < ApplicationController
   end
 
   def faq
-    render :layout => 'plain'
+    render :layout => 'info'
   end
 
 end
