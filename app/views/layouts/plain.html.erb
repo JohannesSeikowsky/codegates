@@ -321,7 +321,8 @@
       <div id="lesson_content">
           <%= yield %>
 
-          <div style="margin-top: 8px; visibility: hidden;">
+          <!--
+          <div style="margin-top: 8px;">
             <%= form_for :student_communication, url: student_communication_url do |f| %>
                 <%= f.text_field :content, placeholder: "Your Question",
                     style: "width: 288px; height: 100px; margin-bottom: 6px;", :required => true %> <br>
@@ -334,6 +335,7 @@
                 <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
             <% end %>
           </div>
+          -->
       </div>
     </div>
 
