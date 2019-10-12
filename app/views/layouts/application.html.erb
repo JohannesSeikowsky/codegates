@@ -284,48 +284,91 @@
 
         <div style="position: relative;">
           <%= link_to "Some Advice", advice_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          
+          <% if @current == "advice" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Email Reminder App", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          
+          <% if @current == "practice_project_one" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Password Generator", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+
+          <% if @current == "practice_project_two" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Book Analysis", practice_project_three_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+
+          <% if @current == "practice_project_three" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Tweet Extraction", practice_project_four_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          
+          <% if @current == "practice_project_four" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "PDF Scanner", practice_project_five_path, class: "side_bar_links", style: "margin-bottom: 14px;  width: 214px;" %>
+
+          <% if @current == "practice_project_five" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Web Scraping - Basic", practice_project_six_path, class: "side_bar_links", style: "margin-bottom: 14px;  width: 214px;" %>
+
+          <% if @current == "practice_project_six" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Sentiment Algorithm", practice_project_seven_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+
+          <% if @current == "practice_project_seven" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Design a Library", practice_project_eight_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+
+          <% if @current == "practice_project_eight" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Google Sheets & Search", practice_project_nine_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+
+          <% if @current == "practice_project_nine" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
 
         <div style="position: relative;">
           <%= link_to "Security with Nmap", practice_project_ten_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          
+          <% if @current == "practice_project_ten" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
         </div>
-
 
         <div style="position: relative;">
           <strong>
