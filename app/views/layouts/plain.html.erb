@@ -132,14 +132,16 @@
     <div id="container" style="position: relative;">
 
       <div style="position: absolute; right: 0px; top: 10px;">
-      <%= link_to "Overview - Python", "https://repl.it/@JohannesSeikows/pythoncheatsheet", target: "_blank", style: "text-decoration: none; padding: 7px 28px; background-color: orange; font-weight: bold;" %> 
-      
-      <%= link_to "Ask a Question", ask_tutor_path, style: "text-decoration: none; padding: 7px 34px; background-color: orange; font-weight: bold;" %> 
-      <%= link_to "(Re)schedule Class", "https://appoint.ly/s/coding_classes/timeslots", target: "_blank", style: "text-decoration: none; padding: 7px 28px; background-color: orange; font-weight: bold;" %>
-      
-      <!--
-      <%= link_to "Join our Online Classes", join_class_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold;" %> --> 
+        <%= link_to "Join Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 10px;" %>
+        <%= link_to "Change Your Class Time", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 12px;" %>
+        <!--
+        <%= link_to "Python Cheatsheet", "https://repl.it/@JohannesSeikows/pythoncheatsheet", target: "_blank", style: "margin-right: 10px;" %>
+        -->
+        <%= link_to "Question? Ask your Tutor.", ask_tutor_path, style: "font-size: 16px; text-decoration: none; padding: 14px 38px; background-color: orange; font-weight: bold;" %>
+        <!--
+        <%= link_to "Join our Online Classes", join_class_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold;" %> -->
       </div>
+
 
       <div style="margin-bottom: 22px;">
         <%= link_to root_path, style: "text-decoration: none; position: inline;" do %>
@@ -158,6 +160,8 @@
           <% end %>
         </div>
         -->
+
+        <p style="text-decoration: underline; margin-top: 0px;"> <strong> Basics </strong> </p>
 
         <div style="position: relative;">
           <%= link_to "1. Repl.it", repl_it_path, class: "side_bar_links", style: "position: relative;" %>
@@ -282,39 +286,59 @@
         </div>
         <%= link_to "12.1. Practice", practice_dictionaries_path, class: "side_bar_links practice_link", style: "margin-bottom: 14px;" %>
 
+      
+        <p style="text-decoration: underline; margin-top: 22px;"> <strong> Mini-Projects </strong> </p>
 
         <div style="position: relative;">
-          <%= link_to "13. Project 1", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
+          <%= link_to "Some Advice", advice_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "14. Project 2", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
+          <%= link_to "Email Reminder App", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "15. Revision", revision_one_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
+          <%= link_to "Password Generator", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "16. Project 3", practice_project_three_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
+          <%= link_to "Book Analysis", practice_project_three_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "17. Project 4 (optional)", practice_project_four_path, class: "side_bar_links", style: "margin-bottom: 14px;  background-color: #F7E5BE; width: 214px;" %>
+          <%= link_to "Tweet Extraction", practice_project_four_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "18. Revision", revision_two_path, class: "side_bar_links", style: "margin-bottom: 14px; background-color: #F7E5BE; width: 214px;" %>
+          <%= link_to "PDF Scanner", practice_project_five_path, class: "side_bar_links", style: "margin-bottom: 14px;  width: 214px;" %>
         </div>
 
         <div style="position: relative;">
-          <%= link_to "19. Start Your Own Project", personal_project_path, class: "side_bar_links", style: "text-decoration: underline; background-color: #F7E5BE; width: 214px;" %>
+          <%= link_to "Web Scraping - Basic", practice_project_six_path, class: "side_bar_links", style: "margin-bottom: 14px;  width: 214px;" %>
         </div>
 
-        <!--
-        <div style="margin: 0px 0px 22px 0px;"> <span style="font-size: 15px;  text-decoration: underline;"> Classes are on each evening <br> of the week 18.00-19.00 and <br> 19.00-20.00 UK-time. </span> </div>
-        -->
-        
+        <div style="position: relative;">
+          <%= link_to "Sentiment Algorithm", practice_project_seven_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "Design a Library", practice_project_eight_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "Google Sheets & Search", practice_project_nine_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "Security with Nmap", practice_project_ten_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+        </div>
+
+
+        <div style="position: relative;">
+          <strong>
+          <%= link_to "Start Your Own Project!", personal_project_path, class: "side_bar_links", style: "width: 214px; margin-top: 22px; background-color: #F8E6BF; text-align: center; padding: 10px; border: 1px solid black;" %>
+          </strong>
+        </div>
       </div>
 
 

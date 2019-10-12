@@ -40,6 +40,8 @@ Rails.application.routes.draw do
   get 'dictionaries', to: 'pages#dictionaries', as: 'dictionaries'
   get 'practice_dictionaries', to: 'pages#practice_dictionaries', as: 'practice_dictionaries'
 
+  get 'advice', to: 'pages#advice', as: 'advice'
+
   get 'practice_project_one', to: 'pages#practice_project_one', as: 'practice_project_one'
 
   get 'practice_project_two', to: 'pages#practice_project_two', as: 'practice_project_two'
@@ -51,6 +53,18 @@ Rails.application.routes.draw do
   get 'practice_project_four', to: 'pages#practice_project_four', as: 'practice_project_four'
 
   get 'revision_two', to: 'pages#revision_two', as: 'revision_two'
+
+  get 'practice_project_five', to: 'pages#practice_project_five', as: 'practice_project_five'
+
+  get 'practice_project_six', to: 'pages#practice_project_six', as: 'practice_project_six'
+
+  get 'practice_project_seven', to: 'pages#practice_project_seven', as: 'practice_project_seven'
+
+  get 'practice_project_eight', to: 'pages#practice_project_eight', as: 'practice_project_eight'
+
+  get 'practice_project_nine', to: 'pages#practice_project_nine', as: 'practice_project_nine'
+
+  get 'practice_project_ten', to: 'pages#practice_project_ten', as: 'practice_project_ten'
 
   get 'personal_project', to: 'pages#personal_project', as: 'personal_project'
 

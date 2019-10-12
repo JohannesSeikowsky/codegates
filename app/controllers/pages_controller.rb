@@ -92,6 +92,11 @@ class PagesController < ApplicationController
   def practice_dictionaries
   end
 
+  def advice
+    @current = "advice"
+    render :layout => 'plain'
+  end
+
   def practice_project_one
     @current = "practice_project_one"
     render :layout => 'plain'
@@ -122,12 +127,41 @@ class PagesController < ApplicationController
     render :layout => 'plain'
   end
 
-  def personal_project
-    @current = "personal_project"
+  def practice_project_five
+    @current = "practice_project_five"
+    render :layout => 'plain'
+  end
+
+  def practice_project_six
+    @current = "practice_project_six"
+    render :layout => 'plain'
+  end
+
+  def practice_project_seven
+    @current = "practice_project_seven"
+    render :layout => 'plain'
+  end
+
+  def practice_project_eight
+    @current = "practice_project_eight"
+    render :layout => 'plain'
+  end
+
+  def practice_project_nine
+    @current = "practice_project_nine"
+    render :layout => 'plain'
+  end
+
+  def practice_project_ten
+    @current = "practice_project_ten"
     render :layout => 'plain'
   end
 
 
+  def personal_project
+    @current = "personal_project"
+    render :layout => 'plain'
+  end
 
   def student_comm_thanks
     render :layout => 'plain'
