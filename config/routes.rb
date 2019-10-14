@@ -40,6 +40,8 @@ Rails.application.routes.draw do
   get 'dictionaries', to: 'pages#dictionaries', as: 'dictionaries'
   get 'practice_dictionaries', to: 'pages#practice_dictionaries', as: 'practice_dictionaries'
 
+  get 'functions', to: 'pages#functions', as: 'functions'
+
   get 'advice', to: 'pages#advice', as: 'advice'
 
   get 'practice_project_one', to: 'pages#practice_project_one', as: 'practice_project_one'

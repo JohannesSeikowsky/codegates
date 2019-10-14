@@ -88,6 +88,10 @@ class PagesController < ApplicationController
   def practice_dictionaries
   end
 
+  def functions
+    @current = "functions"
+  end
+
   def advice
     @current = "advice"
     render :layout => 'plain'

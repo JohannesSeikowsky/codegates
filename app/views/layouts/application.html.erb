@@ -150,7 +150,7 @@
         <p style="text-decoration: underline; margin-top: 0px; margin-bottom: 12px;"> <strong> Basics </strong> </p>
 
         <div style="position: relative;">
-          <%= link_to "Intro", intro_path, class: "side_bar_links", style: "position: relative; margin-bottom: 12px;" %>
+          <%= link_to "Intro", intro_path, class: "side_bar_links", style: "position: relative; margin-bottom: 10px;" %>
 
           <% if @current == "intro" %>
             <div class="link_overlay"> A </div>
@@ -303,6 +303,14 @@
           <%= link_to "Password Generator", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
 
           <% if @current == "practice_project_two" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "Interlude - Functions", functions_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+
+          <% if @current == "functions" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
