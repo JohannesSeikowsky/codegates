@@ -132,8 +132,10 @@
     <div id="container" style="position: relative;">
 
       <div style="position: absolute; right: 0px; top: 10px;">
-        <%= link_to "Join Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 10px;" %>
+        <%= link_to "Join Our Daily Online Classes!", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 10px;" %>
+        <!--
         <%= link_to "Change Your Class Time", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 12px;" %>
+        -->
         <!--
         <%= link_to "Python Cheatsheet", "https://repl.it/@JohannesSeikows/pythoncheatsheet", target: "_blank", style: "margin-right: 10px;" %>
         -->
@@ -152,19 +154,19 @@
 
       
       <div id="side_bar">
-        <!--
-        <div style="position: relative;">
-          <%= link_to "One Minute Intro", intro_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
-          <% if @current == "intro" %>
-            <div class="link_overlay"> A </div>
-          <% end %>
-        </div>
-        -->
 
         <p style="text-decoration: underline; margin-top: 0px;"> <strong> Basics </strong> </p>
 
         <div style="position: relative;">
-          <%= link_to "1. Repl.it", repl_it_path, class: "side_bar_links", style: "position: relative;" %>
+          <%= link_to "Intro", intro_path, class: "side_bar_links", style: "position: relative; margin-bottom: 14px;" %>
+
+          <% if @current == "intro" %>
+            <div class="link_overlay"> A </div>
+          <% end %>
+        </div>
+
+        <div style="position: relative;">
+          <%= link_to "1. Repl.it", repl_it_path, class: "side_bar_links" %>
 
           <% if @current == "repl_it" %>
             <div class="link_overlay"> A </div>
@@ -287,7 +289,7 @@
         <%= link_to "12.1. Practice", practice_dictionaries_path, class: "side_bar_links practice_link", style: "margin-bottom: 14px;" %>
 
       
-        <p style="text-decoration: underline; margin-top: 22px;"> <strong> Mini-Projects </strong> </p>
+        <p style="text-decoration: underline; margin-top: 22px;"> <strong> Projects </strong> </p>
 
         <div style="position: relative;">
           <%= link_to "Some Advice", advice_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'pages#repl_it'
+  root 'pages#intro'
 
   # course pages
   get 'intro', to: 'pages#intro', as: 'intro'
