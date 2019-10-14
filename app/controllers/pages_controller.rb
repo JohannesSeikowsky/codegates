@@ -62,7 +62,6 @@ class PagesController < ApplicationController
 
   def lists
     @current = "lists"
-    render :layout => 'plain'
   end
 
   def practice_lists
@@ -70,7 +69,6 @@ class PagesController < ApplicationController
 
   def if_statements
     @current = "if_statements"
-    render :layout => 'plain'
   end
 
   def practice_if_statements
@@ -78,7 +76,6 @@ class PagesController < ApplicationController
 
   def for_loops
     @current = "for_loops"
-    render :layout => 'plain'
   end
 
   def practice_for_loops
@@ -86,7 +83,6 @@ class PagesController < ApplicationController
 
   def dictionaries
     @current = "dictionaries"
-    render :layout => 'plain'
   end
 
   def practice_dictionaries
