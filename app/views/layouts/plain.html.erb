@@ -132,7 +132,7 @@
     <div id="container" style="position: relative;">
 
       <div style="position: absolute; right: 0px; top: 10px;">
-        <%= link_to "Join Our Daily Online Classes!", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 10px;" %>
+        <%= link_to "Join Our Daily Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 10px;" %>
         <!--
         <%= link_to "Change Your Class Time", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 12px;" %>
         -->
@@ -155,10 +155,10 @@
       
       <div id="side_bar">
 
-        <p style="text-decoration: underline; margin-top: 0px;"> <strong> Basics </strong> </p>
+        <p style="text-decoration: underline; margin-top: 0px;  margin-bottom: 12px;"> <strong> Basics </strong> </p>
 
         <div style="position: relative;">
-          <%= link_to "Intro", intro_path, class: "side_bar_links", style: "position: relative; margin-bottom: 14px;" %>
+          <%= link_to "Intro", intro_path, class: "side_bar_links", style: "position: relative; margin-bottom: 12px;" %>
 
           <% if @current == "intro" %>
             <div class="link_overlay"> A </div>
