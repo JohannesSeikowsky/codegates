@@ -112,29 +112,39 @@
        color: orange; 
        opacity: 0.2;
      }
+
+    .header_link{
+      width: 214px; 
+      margin-top: 22px; 
+      background-color: #F7E5BE; 
+      text-align: center; 
+      padding: 10px; 
+      border: 1px solid black; 
+      text-decoration: none;
+     }
   </style>
 
 
   <body>
 
     <div id="container" style="position: relative;">
+
+
       <div style="position: absolute; right: 0px; top: 10px;">
+        <%= link_to "Ask a Question", ask_tutor_path, class: "header_link" %>
 
-      <%= link_to "Join Our Daily Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 10px;" %>
+        <%= link_to "Start Your Own Project", personal_project_path, class: "header_link" %>
 
-      <!--
-      <%= link_to "Change Your Class Time", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 12px;" %>
-      -->
+        <%= link_to "Join Our Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", class: "header_link" %>
 
-      <!--
-      <%= link_to "Python Cheatsheet", "https://repl.it/@JohannesSeikows/pythoncheatsheet", target: "_blank", style: "margin-right: 10px;" %>
-      -->
-
-      <%= link_to "Question? Ask a Tutor.", ask_tutor_path, style: "font-size: 16px; text-decoration: none; padding: 14px 38px; background-color: orange; font-weight: bold;" %>
-
-      <!--
-      <%= link_to "Join our Online Classes", join_class_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold;" %>
-      `-->
+        <!--
+        <%= link_to "Change Your Class Time", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 12px;" %>
+        -->
+        <!--
+        <%= link_to "Python Cheatsheet", "https://repl.it/@JohannesSeikows/pythoncheatsheet", target: "_blank", style: "margin-right: 10px;" %>
+        -->
+        <!--
+        <%= link_to "Join our Online Classes", join_class_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold;" %> -->
       </div>
 
       <div style="margin-bottom: 22px;">
@@ -379,11 +389,13 @@
           <% end %>
         </div>
 
+        <!--
         <div style="position: relative;">
           <strong>
           <%= link_to "Start Your Own Project!", personal_project_path, class: "side_bar_links", style: "width: 214px; margin-top: 22px; background-color: #F8E6BF; text-align: center; padding: 10px; border: 1px solid black;" %>
           </strong>
         </div>
+        -->
       </div>
 
 
