@@ -14,7 +14,7 @@
   <style type="text/css">
     html{
       font-family: Verdana, sans-serif; 
-      background-color: #F6F6EF;
+      background-color: white;
       /* background-color: #F7EEE5; */
       /* background-color: #F5F7EE; */
       margin-top: 12px;
@@ -94,13 +94,15 @@
     }
 
     .to_practice_btn{
-      background-color: #DEDED4; 
-      padding: 4px 12px;
+      font-size: 15px;    
+      width: 214px; 
+      margin-top: 22px; 
+      background-color: #F7E5BE; 
+      text-align: center; 
+      padding: 6px 14px;
+      border: 1px solid black; 
       text-decoration: none;
-      font-size: 15px;
-      border: 2px solid lightgrey;
     }
-
 
     .link_overlay{
        position: absolute; 
@@ -125,12 +127,23 @@
         margin-bottom: 42px;
      }
 
-     .header_link{
+
+    .submit_question_btn{
+      cursor: pointer;
+      font-size: 15px;
+      background-color: #F7E5BE; 
+      text-align: center; 
+      padding: 2px 18px;
+      border: 1px solid black; 
+      text-decoration: none;
+    }
+
+    .header_link{
       width: 214px; 
       margin-top: 22px; 
       background-color: #F7E5BE; 
       text-align: center; 
-      padding: 8px 12px; 
+      padding: 6px 14px;
       border: 1px solid black; 
       text-decoration: none;
      }
@@ -146,8 +159,9 @@
 
         <%= link_to "Start Your Own Project", personal_project_path, class: "header_link" %>
 
+        <!--
         <%= link_to "Join Our Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", class: "header_link" %>
-
+        --> 
         <!--
         <%= link_to "Change Your Class Time", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 12px;" %>
         -->
