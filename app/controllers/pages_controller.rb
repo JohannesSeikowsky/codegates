@@ -21,6 +21,7 @@ class PagesController < ApplicationController
   end
 
   def practice_builtin_functions
+      render :layout => 'plain'
   end
 
   def programming_languages
@@ -32,6 +33,7 @@ class PagesController < ApplicationController
   end
 
   def practice_strings
+    render :layout => 'plain'
   end
 
   def packages_preview
@@ -43,6 +45,7 @@ class PagesController < ApplicationController
   end
 
   def practice_comments
+    render :layout => 'plain'
   end
 
   def variables
@@ -50,6 +53,7 @@ class PagesController < ApplicationController
   end
 
   def practice_variables
+    render :layout => 'plain'
   end
 
   def numbers
@@ -65,6 +69,7 @@ class PagesController < ApplicationController
   end
 
   def practice_lists
+    render :layout => 'plain'
   end
 
   def if_statements
@@ -72,6 +77,7 @@ class PagesController < ApplicationController
   end
 
   def practice_if_statements
+    render :layout => 'plain'
   end
 
   def for_loops
@@ -79,6 +85,7 @@ class PagesController < ApplicationController
   end
 
   def practice_for_loops
+    render :layout => 'plain'
   end
 
   def dictionaries
@@ -86,6 +93,7 @@ class PagesController < ApplicationController
   end
 
   def practice_dictionaries
+    render :layout => 'plain'
   end
 
   def functions
