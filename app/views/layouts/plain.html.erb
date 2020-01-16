@@ -131,7 +131,7 @@
       margin-top: 22px; 
       background-color: #F7E5BE; 
       text-align: center; 
-      padding: 6px 14px;
+      padding: 10px 58px;
       border: 1px solid black; 
       text-decoration: none;
      }
@@ -144,9 +144,11 @@
 
 
       <div style="position: absolute; right: 0px; top: 10px;">
-        <%= link_to "Ask a Question", ask_tutor_path, class: "header_link" %>
+        <%= link_to "Ask a Tutor!", ask_tutor_path, class: "header_link" %>
 
+        <!--
         <%= link_to "Start Your Own Project", personal_project_path, class: "header_link" %>
+        -->
 
         <!--
         <%= link_to "Join Our Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", class: "header_link" %>
@@ -359,6 +361,10 @@
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
+
+        <p> <strong> Congrats! </strong> </p>
+        <%= link_to "Start your own project", personal_project_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px; text-decoration: underline;" %>
+
 
         <!--
         <div style="position: relative;">
