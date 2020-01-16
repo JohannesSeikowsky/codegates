@@ -172,7 +172,9 @@
       
       <div id="side_bar">
 
+        <!--
         <p style="text-decoration: underline; margin-top: 0px; margin-bottom: 12px;"> <strong> Python Basics </strong> </p>
+        -->
 
         <!--
         <div style="position: relative;">
@@ -184,6 +186,7 @@
         </div>
         -->
 
+        <p style="margin-top: 0px;"> <strong> Week 1 </strong> </p>
         <div style="position: relative;">
           <%= link_to "1. Repl.it", repl_it_path, class: "side_bar_links" %>
 
@@ -229,6 +232,7 @@
         </div>
         <%= link_to "3.1. Practice", practice_strings_path, class: "side_bar_links practice_link" %>
 
+        <p> <strong> Week 2 </strong> </p>
         <div style="position: relative;">
           <%= link_to "4. Packages", packages_preview_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
           
@@ -255,6 +259,7 @@
         </div>
         <%= link_to "6.1. Practice", practice_variables_path, class: "side_bar_links practice_link" %>
 
+        <p> <strong> Week 3 </strong> </p>
         <div style="position: relative;">
           <%= link_to "7. Numbers", numbers_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
         
@@ -282,6 +287,8 @@
         </div>
         <%= link_to "8.1. Practice", practice_lists_path, class: "side_bar_links practice_link" %>
 
+
+        <p> <strong> Week 4 </strong> </p>
         <div style="position: relative;">
           <%= link_to "9. If-Statements", if_statements_path, class: "side_bar_links" %>
 
@@ -300,6 +307,8 @@
         </div>
         <%= link_to "10.1. Practice", practice_for_loops_path, class: "side_bar_links practice_link" %>
 
+
+        <p> <strong> Week 5 </strong> </p>
         <div style="position: relative;">
           <%= link_to "11. Dictionaries", dictionaries_path, class: "side_bar_links" %>
 
@@ -321,11 +330,14 @@
         <%= link_to "12.1. Practice", functions_path, class: "side_bar_links practice_link", style: "margin-bottom: 14px;" %>
         -->
 
-
+        <!--
         <p style="text-decoration: underline; margin-top: 22px;"> <strong> 10 Mini-Projects </strong> </p>
+        -->
+
+        <p> <strong> Week 6 </strong> </p>
 
         <div style="position: relative;">
-          <%= link_to "Some Advice", advice_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          <%= link_to "13. Project Advice", advice_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
           
           <% if @current == "advice" %>
             <div class="link_overlay"> A </div>
@@ -333,7 +345,7 @@
         </div>
 
         <div style="position: relative;">
-          <%= link_to "1. Email Reminder App", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          <%= link_to "14. Email Reminder App", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
           
           <% if @current == "practice_project_one" %>
             <div class="link_overlay"> A </div>
@@ -341,13 +353,14 @@
         </div>
 
         <div style="position: relative;">
-          <%= link_to "2. Password Generator", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          <%= link_to "15. Password Generator", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
 
           <% if @current == "practice_project_two" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
 
+        <!--
         <div style="position: relative;">
           <%= link_to "3. Book Analysis", practice_project_three_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
 
@@ -411,6 +424,7 @@
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
+        -->
 
         <!--
         <div style="position: relative;">

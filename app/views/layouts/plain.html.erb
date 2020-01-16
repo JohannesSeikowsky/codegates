@@ -104,6 +104,16 @@
       text-decoration: none;
     }
 
+    .submit_question_btn{
+      cursor: pointer;
+      font-size: 15px;
+      background-color: #F7E5BE; 
+      text-align: center; 
+      padding: 2px 18px;
+      border: 1px solid black; 
+      text-decoration: none;
+    }
+
     .link_overlay{
        position: absolute; 
        top: 0; 
@@ -116,28 +126,6 @@
        opacity: 0.2;
      }
 
-     .faq_question{
-        font-weight: bold;
-        margin-bottom: 6px;
-     }
-
-     .faq_answer{
-        font-weight: normal;
-        margin-top: 0px;
-        margin-bottom: 42px;
-     }
-
-
-    .submit_question_btn{
-      cursor: pointer;
-      font-size: 15px;
-      background-color: #F7E5BE; 
-      text-align: center; 
-      padding: 2px 18px;
-      border: 1px solid black; 
-      text-decoration: none;
-    }
-
     .header_link{
       width: 214px; 
       margin-top: 22px; 
@@ -147,12 +135,13 @@
       border: 1px solid black; 
       text-decoration: none;
      }
-
   </style>
 
+
   <body>
-    
+
     <div id="container" style="position: relative;">
+
 
       <div style="position: absolute; right: 0px; top: 10px;">
         <%= link_to "Ask a Question", ask_tutor_path, class: "header_link" %>
@@ -161,7 +150,8 @@
 
         <!--
         <%= link_to "Join Our Online Classes", "https://calendly.com/coding_classes/times", target: "_blank", class: "header_link" %>
-        --> 
+        -->
+
         <!--
         <%= link_to "Change Your Class Time", "https://calendly.com/coding_classes/times", target: "_blank", style: "margin-right: 12px;" %>
         -->
@@ -171,7 +161,6 @@
         <!--
         <%= link_to "Join our Online Classes", join_class_path, style: "text-decoration: none; padding: 7px 13px; background-color: orange; font-weight: bold;" %> -->
       </div>
-
 
       <div style="margin-bottom: 22px;">
         <%= link_to root_path, style: "text-decoration: none; position: inline;" do %>
@@ -183,7 +172,9 @@
       
       <div id="side_bar">
 
+        <!--
         <p style="text-decoration: underline; margin-top: 0px; margin-bottom: 12px;"> <strong> Python Basics </strong> </p>
+        -->
 
         <!--
         <div style="position: relative;">
@@ -195,6 +186,7 @@
         </div>
         -->
 
+        <p style="margin-top: 0px;"> <strong> Week 1 </strong> </p>
         <div style="position: relative;">
           <%= link_to "1. Repl.it", repl_it_path, class: "side_bar_links" %>
 
@@ -240,6 +232,7 @@
         </div>
         <%= link_to "3.1. Practice", practice_strings_path, class: "side_bar_links practice_link" %>
 
+        <p> <strong> Week 2 </strong> </p>
         <div style="position: relative;">
           <%= link_to "4. Packages", packages_preview_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
           
@@ -266,6 +259,7 @@
         </div>
         <%= link_to "6.1. Practice", practice_variables_path, class: "side_bar_links practice_link" %>
 
+        <p> <strong> Week 3 </strong> </p>
         <div style="position: relative;">
           <%= link_to "7. Numbers", numbers_path, class: "side_bar_links", style: "margin-bottom: 14px;" %>
         
@@ -293,6 +287,8 @@
         </div>
         <%= link_to "8.1. Practice", practice_lists_path, class: "side_bar_links practice_link" %>
 
+
+        <p> <strong> Week 4 </strong> </p>
         <div style="position: relative;">
           <%= link_to "9. If-Statements", if_statements_path, class: "side_bar_links" %>
 
@@ -311,6 +307,8 @@
         </div>
         <%= link_to "10.1. Practice", practice_for_loops_path, class: "side_bar_links practice_link" %>
 
+
+        <p> <strong> Week 5 </strong> </p>
         <div style="position: relative;">
           <%= link_to "11. Dictionaries", dictionaries_path, class: "side_bar_links" %>
 
@@ -332,11 +330,14 @@
         <%= link_to "12.1. Practice", functions_path, class: "side_bar_links practice_link", style: "margin-bottom: 14px;" %>
         -->
 
-
+        <!--
         <p style="text-decoration: underline; margin-top: 22px;"> <strong> 10 Mini-Projects </strong> </p>
+        -->
+
+        <p> <strong> Week 6 </strong> </p>
 
         <div style="position: relative;">
-          <%= link_to "Some Advice", advice_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          <%= link_to "13. Project Advice", advice_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
           
           <% if @current == "advice" %>
             <div class="link_overlay"> A </div>
@@ -344,7 +345,7 @@
         </div>
 
         <div style="position: relative;">
-          <%= link_to "1. Email Reminder App", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          <%= link_to "14. Email Reminder App", practice_project_one_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
           
           <% if @current == "practice_project_one" %>
             <div class="link_overlay"> A </div>
@@ -352,13 +353,14 @@
         </div>
 
         <div style="position: relative;">
-          <%= link_to "2. Password Generator", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
+          <%= link_to "15. Password Generator", practice_project_two_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
 
           <% if @current == "practice_project_two" %>
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
 
+        <!--
         <div style="position: relative;">
           <%= link_to "3. Book Analysis", practice_project_three_path, class: "side_bar_links", style: "margin-bottom: 14px; width: 214px;" %>
 
@@ -422,6 +424,7 @@
             <div class="link_overlay"> A </div>
           <% end %>
         </div>
+        -->
 
         <!--
         <div style="position: relative;">
@@ -433,11 +436,17 @@
       </div>
 
 
-
       <div id="lesson_content">
           <%= yield %>
 
+
           <!--
+          <div style="margin-top: 22px" id="ask_tutor">
+            <span style="font-weight: bold; font-size: 18px;"> 
+              Ask a Question
+            </span>
+          </div>
+
           <div style="margin-top: 8px;">
             <%= form_for :student_communication, url: student_communication_url do |f| %>
                 <%= f.text_field :content, placeholder: "Your Question",
@@ -448,10 +457,11 @@
 
                 <%= f.text_field :tutor, placeholder: "Your Email", style: "width: 288px; height: 26px; margin-bottom: 12px;", :required => true %> <br>
 
-                <%= f.submit "Submit", style: "cursor: pointer; font-size: 14px; margin-top: 0px; padding: 4px 8px 4px 8px;" %> <br> <br>
+                <%= f.submit "Submit", class: "submit_question_btn" %> <br> <br>
             <% end %>
           </div>
           -->
+
       </div>
     </div>
 

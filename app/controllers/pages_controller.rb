@@ -1,6 +1,4 @@
 class PagesController < ApplicationController
-  layout "practice", only: [:practice_init, :practice_builtin_functions, :practice_strings, :practice_comments, :practice_variables, 
-                                  :practice_lists, :practice_if_statements, :practice_for_loops, :practice_dictionaries]
 
   def intro
     @current = "intro"
